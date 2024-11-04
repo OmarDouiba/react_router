@@ -1,0 +1,106 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic layout styling for the main container */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+/* Generic div styling for all components */
+main > div {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+/* Specific styles for page components */
+.Home div,
+.Admin div,
+.PageNotFound div {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ProductDetail div p {
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  main > div {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.header-container {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}
+
+.active-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.footer-container {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
